@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"image"
 	"image/gif"
 	"image/jpeg"
@@ -35,7 +34,6 @@ func handler(c echo.Context) error {
 	var extension = filepath.Ext(value)
 	if extension != "" {
 		value = value[0 : len(value)-len(extension)]
-		fmt.Println(extension)
 	}
 
 	widthParam := c.QueryParam("width")
