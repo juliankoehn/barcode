@@ -146,6 +146,8 @@ func setBarcode(code, variant string) *barArray {
 		return barcodeCode39(code, true, true)
 	case "C93":
 		return barcodeCode93(code)
+	case "S25":
+		return barcodeS25(code, false)
 	}
 
 	return arrcode
