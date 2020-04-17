@@ -21,6 +21,9 @@ Supported Barcodes:
 * `showCode`: {bool} display code under BARCODE
 * `inline`: {bool} removes XML/SVG headers from output
 
+### Returns
+SVG as `string`
+
 ```go
 GetBarcodeSVG(code, variant, w, h, color, showCode, inline)
 ```
