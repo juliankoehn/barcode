@@ -12,6 +12,8 @@ Supported Barcodes:
 * C93
 * S25
 * S25+
+* I25
+* I25+
 
 ## Call:
 
