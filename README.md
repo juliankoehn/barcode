@@ -10,6 +10,8 @@ Supported Barcodes:
 * C39E
 * C39E+
 * C93
+* S25
+* S25+
 
 ## Call:
 
