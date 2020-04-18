@@ -39,7 +39,38 @@ var codes = map[string]map[string]string{
 	},
 }
 
-var parities = make(map[int]map[int][]string, 5)
+var parities = map[int]map[int][]string{
+	0: {
+		0: {"A", "A", "A", "A", "A", "A"},
+		1: {"A", "A", "B", "A", "B", "B"},
+		2: {"A", "A", "B", "B", "A", "B"},
+		3: {"A", "A", "B", "B", "B", "A"},
+		4: {"A", "B", "A", "A", "B", "B"},
+		5: {"A", "B", "B", "A", "A", "B"},
+		6: {"A", "B", "B", "B", "A", "A"},
+		7: {"A", "B", "A", "B", "A", "B"},
+		8: {"A", "B", "A", "B", "B", "A"},
+		9: {"A", "B", "B", "A", "B", "A"},
+	},
+	2: {
+		0: {"A", "1"},
+		1: {"A", "B"},
+		2: {"B", "A"},
+		3: {"B", "B"},
+	},
+	3: {
+		0: {"B", "B", "A", "A", "A"},
+		1: {"B", "A", "B", "A", "A"},
+		2: {"B", "A", "A", "B", "A"},
+		3: {"B", "A", "A", "A", "B"},
+		4: {"A", "B", "B", "A", "A"},
+		5: {"A", "A", "B", "B", "A"},
+		6: {"A", "A", "A", "B", "B"},
+		7: {"A", "B", "A", "B", "A"},
+		8: {"A", "B", "A", "A", "B"},
+		9: {"A", "A", "B", "A", "B"},
+	},
+}
 
 var upcParities = map[int]map[int][]string{
 	0: {
@@ -68,6 +99,7 @@ var upcParities = map[int]map[int][]string{
 	},
 }
 
+/*
 func init() {
 	parities[0] = map[int][]string{
 		0: {"A", "A", "A", "A", "A", "A"},
@@ -99,4 +131,4 @@ func init() {
 		8: {"A", "B", "A", "A", "B"},
 		9: {"A", "A", "B", "A", "B"},
 	}
-}
+}*/
