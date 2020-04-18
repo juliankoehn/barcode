@@ -359,10 +359,8 @@ func get128ABsequence(code string) sequence {
 	if len(matches) > 0 {
 		// it's A or B
 		return sequence{"B", code, len(code), false}
-	} else {
-		// it's B - for sure
-		return sequence{"B", code, len(code), false}
 	}
+	return sequence{"B", code, len(code), false}
 }
 
 func strToRunes(str string) []rune {
