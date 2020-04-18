@@ -28,6 +28,8 @@ Supported Barcodes:
 * MSI+
 * POSTNET
 * PLANET
+* RMS4CC
+* KIX
   
 ## Call:
 
