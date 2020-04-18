@@ -351,6 +351,7 @@ type sequence struct {
 	B       bool
 }
 
+// TODO: finish....
 func get128ABsequence(code string) sequence {
 	fmt.Println(code)
 	re := regexp.MustCompile("([0-31])")
