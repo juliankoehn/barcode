@@ -26,6 +26,8 @@ Supported Barcodes:
 * UPCE
 * MSI
 * MSI+
+* POSTNET
+* PLANET
   
 ## Call:
 

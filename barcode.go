@@ -173,6 +173,10 @@ func setBarcode(code, variant string) *barArray {
 		return barcodeMSI(code, false)
 	case "MSI+":
 		return barcodeMSI(code, true)
+	case "POSTNET":
+		return barcodePOSTNET(code, false)
+	case "PLANET":
+		return barcodePOSTNET(code, true)
 	default:
 		return nil
 	}
