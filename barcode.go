@@ -181,6 +181,8 @@ func setBarcode(code, variant string) *barArray {
 		return barcodeCBCKIX(code, false)
 	case "KIX":
 		return barcodeCBCKIX(code, true)
+	case "IMB":
+		return imd(code)
 	default:
 		return nil
 	}
