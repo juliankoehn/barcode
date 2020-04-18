@@ -20,6 +20,10 @@ Supported Barcodes:
 * C128C
 * EAN2
 * EAN5
+* EAN8
+* EAN13
+* UPCA
+* UPCE
   
 ## Call:
 
