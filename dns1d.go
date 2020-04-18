@@ -166,6 +166,14 @@ func setBarcode(code, variant string) *barArray {
 		return barcodeEANNEXT(code, 2)
 	case "EAN5":
 		return barcodeEANNEXT(code, 5)
+	case "EAN8":
+		return barcodeEANUPC(code, 8)
+	case "EAN13":
+		return barcodeEANUPC(code, 13)
+	case "UPCA":
+		return barcodeEANUPC(code, 12)
+	case "UPCE":
+		return barcodeEANUPC(code, 6)
 	}
 
 	return arrcode
