@@ -18,6 +18,8 @@ Supported Barcodes:
 * C128A
 * C128B
 * C128C
+* EAN2
+* EAN5
   
 ## Call:
 
