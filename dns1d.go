@@ -154,6 +154,14 @@ func setBarcode(code, variant string) *barArray {
 		return barcodeI25(code, false)
 	case "I25+":
 		return barcodeI25(code, true)
+	case "C128":
+		return barcodeC128(code, "")
+	case "C128A":
+		return barcodeC128(code, "A")
+	case "C128B":
+		return barcodeC128(code, "B")
+	case "C128C":
+		return barcodeC128(code, "C")
 	}
 
 	return arrcode
