@@ -14,7 +14,11 @@ Supported Barcodes:
 * S25+
 * I25
 * I25+
-
+* C128 // auto mode
+* C128A
+* C128B
+* C128C
+  
 ## Call:
 
 * `code`: {string} Your Code
