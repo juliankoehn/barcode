@@ -130,17 +130,12 @@ func addLabel(img *image.RGBA, x, y int, label string) {
 
 func setBarcode(code, variant string) *barArray {
 	variant = strings.ToUpper(variant)
-	var arrcode *barArray
-
 	switch variant {
 	case "C39":
-		// CODE 39 - ANSI MH10.8M-1983 - USD-3 - 3 of 9
-		arrcode = barcodeCode39(code, false, false)
+		return barcodeCode39(code, false, false)
 	case "C39+":
-		// CODE 39 with checksum
 		return barcodeCode39(code, false, true)
 	case "C39E":
-		// Code 39 extended
 		return barcodeCode39(code, true, false)
 	case "C39E+":
 		return barcodeCode39(code, true, true)
@@ -174,7 +169,11 @@ func setBarcode(code, variant string) *barArray {
 		return barcodeEANUPC(code, 12)
 	case "UPCE":
 		return barcodeEANUPC(code, 6)
+	case "MSI":
+		return barcodeMSI(code, false)
+	case "MSI+":
+		return barcodeMSI(code, true)
+	default:
+		return nil
 	}
-
-	return arrcode
 }

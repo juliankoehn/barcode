@@ -24,6 +24,8 @@ Supported Barcodes:
 * EAN13
 * UPCA
 * UPCE
+* MSI
+* MSI+
   
 ## Call:
 
